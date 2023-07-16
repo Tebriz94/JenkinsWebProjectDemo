@@ -14,7 +14,7 @@ pipeline {
 
                     steps{
 
-                        sh 'scp -r  ${WORKSPACE}/*' root@${staging_Server}:/var/www/html/jenkinsdemoproject
+                        sh 'scp -r  ${WORKSPACE}/*  root@${staging_Server}:/var/www/html/jenkinsdemoproject'
 
                     }
                 
