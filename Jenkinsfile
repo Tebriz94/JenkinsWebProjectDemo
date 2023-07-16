@@ -1,7 +1,7 @@
 pipeline {
 
         agent any
-        enviroment{
+        environment{
 
 
                 staging_Server="54.204.204.251"
@@ -14,7 +14,7 @@ pipeline {
 
                     steps{
 
-                        sh 'scp -r  ${WORKSPACE}/*' root@${staging_Server}:/var/www/html/jenkinsdemoproject
+                        sh 'scp -r  ${WORKSPACE}/*  root@${staging_Server}:/var/www/html/jenkinsdemoproject'
 
                     }
                 
