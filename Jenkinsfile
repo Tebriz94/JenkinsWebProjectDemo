@@ -14,7 +14,7 @@ pipeline {
 
                     steps{
 
-                        sh ' sudo scp -r  ${WORKSPACE}/*  root@${staging_Server}:/var/www/html/jenkinsdemoproject'
+                        sh ' sudo scp -r  ${WORKSPACE}/*  ec2-user@${staging_Server}:/var/www/html/jenkinsdemoproject'
 
                     }
                 
